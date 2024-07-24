@@ -81,7 +81,7 @@ fun main() {
     println("My Second Number $mySecondNumber")
 
 
-   */
+
 
 
     // char and boolean -----------------------------------------------
@@ -92,5 +92,46 @@ fun main() {
     println("My Char value is $myCharValue and My Bool value is $myBoolean")
 
 
+
+    // operators --------------------------------------------------------
+
+    var x = 5
+    var y = 3.0
+
+//    val result = x + y
+//    println("result is $result")
+
+
+    println("x + y = ${x+y}")
+    println("x - y = ${x-y}")
+    println("x * y = ${x*y}")
+    println("x / y = ${x/y}")
+    println("x % y = ${x%y}")
+
+    var result = x + y
+
+
+    result += 2
+    println("result = $result")
+
+    result -= 2
+    println("result = $result")
+
+    result *= 2
+    println("result = $result")
+
+    result /= 2
+    println("result = $result")
+
+    result %= 2
+    println("result = $result")
+
+    x = 0
+    println("x = ${x++}")
+    println("x = ${++x}")
+
+    println("x = ${x--}")
+    println("x = ${--x}")
+ */
 
 }
