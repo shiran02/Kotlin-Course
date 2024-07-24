@@ -81,7 +81,7 @@ fun main() {
     println("My Second Number $mySecondNumber")
 
 
-   */
+
 
 
     // char and boolean -----------------------------------------------
@@ -90,6 +90,73 @@ fun main() {
     val myBoolean = true
 
     println("My Char value is $myCharValue and My Bool value is $myBoolean")
+
+
+
+    // operators --------------------------------------------------------
+
+    var x = 5
+    var y = 3.0
+
+//    val result = x + y
+//    println("result is $result")
+
+
+    println("x + y = ${x+y}")
+    println("x - y = ${x-y}")
+    println("x * y = ${x*y}")
+    println("x / y = ${x/y}")
+    println("x % y = ${x%y}")
+
+    var result = x + y
+
+
+    result += 2
+    println("result = $result")
+
+    result -= 2
+    println("result = $result")
+
+    result *= 2
+    println("result = $result")
+
+    result /= 2
+    println("result = $result")
+
+    result %= 2
+    println("result = $result")
+
+    x = 0
+    println("x = ${x++}")
+    println("x = ${++x}")
+
+    println("x = ${x--}")
+    println("x = ${--x}")
+ */
+
+    // CONDITION ------------------------------------------
+
+   // val isActive = false
+    val myNumber = 100
+
+    if(myNumber>100){
+        println("Greater than 130")
+    }else if(myNumber <=100){
+        println("Greater Than 90")
+    }else{
+        println("All the condition Are fail")
+    }
+
+    // <=  !=  >= ==   --------------------------------------------
+    val isActive = false
+    if(!isActive){
+        println("Greater Than 90")
+    }else{
+        println("All the condition Are fail")
+    }
+
+
+
 
 
 
