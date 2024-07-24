@@ -134,4 +134,30 @@ fun main() {
     println("x = ${--x}")
  */
 
+    // CONDITION ------------------------------------------
+
+   // val isActive = false
+    val myNumber = 100
+
+    if(myNumber>100){
+        println("Greater than 130")
+    }else if(myNumber <=100){
+        println("Greater Than 90")
+    }else{
+        println("All the condition Are fail")
+    }
+
+    // <=  !=  >= ==   --------------------------------------------
+    val isActive = false
+    if(!isActive){
+        println("Greater Than 90")
+    }else{
+        println("All the condition Are fail")
+    }
+
+
+
+
+
+
 }
