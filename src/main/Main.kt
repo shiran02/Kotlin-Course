@@ -132,7 +132,7 @@ fun main() {
 
     println("x = ${x--}")
     println("x = ${--x}")
- */
+
 
     // CONDITION ------------------------------------------
 
@@ -155,9 +155,83 @@ fun main() {
         println("All the condition Are fail")
     }
 
+    // -----
+
+    var isPlaying = true
+    val score = 100
+
+    if(isPlaying && score == 100){
+        println("Next level Open")
+    }else{
+        println("Still same Level")
+    }
+
+    val num1 = 20
+    val num2 = 34
+
+    if(num1>num2 || num2  < 100){
+        println("Condition is true")
+    }else{
+        println("Condition is false")
+    }
 
 
 
+
+    val num1 = 20
+    val num2 = 34
+
+    val text = if (num1 > num2 && num2 < 100) {
+        println("Condition is true")
+        "This is Text 1"
+    } else {
+        println("Condition is false")
+        "This is Text 2"
+    }
+
+
+
+    val age = 26
+    val gap = 2
+
+    val  name = if(age > gap || gap < 5) "Name is Shiran"  else  "Name is Shiran kumarasingha"
+
+    println(name)
+
+
+
+
+    val alarm = 12
+
+    when(alarm){
+        12 -> print("Time is $alarm")
+        1 -> print("Time is $alarm")
+        2 -> print("Time is $alarm")
+        else -> print("Time is $alarm")
+    }
+
+    when(alarm){
+        12,1,2,3,4 -> print("Time is $alarm")
+        else -> print("Time is $alarm")
+    }
+
+     */
+
+    val age = 26
+
+    when(age){
+        in 1..10 -> print("Age IS In 1 To 10 Range")
+        in 11..25 -> print("Age is In 11 To 25 Range")
+        else -> print("Age Is Not In Range")
+    }
+
+    val alarm = 7
+
+    val text = when{
+        alarm == 8 || alarm == 7 -> "The Time is $alarm"
+        alarm <= 10 -> "The Number is in the range 1 .. 10"
+        else -> "the Time is $alarm"
+    }
 
 
 }
