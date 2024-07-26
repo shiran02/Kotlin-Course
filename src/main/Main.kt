@@ -215,7 +215,7 @@ fun main() {
         else -> print("Time is $alarm")
     }
 
-     */
+
 
     val age = 26
 
@@ -234,4 +234,35 @@ fun main() {
     }
 
 
+
+
+
+    // null value handle ------------
+
+    val text : String? = null
+
+
+    var name :String? ="Shiran"
+    name = null
+    if(name != null){
+        print(name.length)
+    }else   {
+        println("The Variable is Null")
+    }
+    // Nullable Types ------------------------
+    // -------------------------------------------
+
+    var text1 :String? = null
+    text1 = "This Varible is Not Null"
+    var text2 :String = text1 ?: "Some text"
+    println(text2)
+
+    //-----------------------------------------
+    if(text1 == null){
+        text2 = "Some text"
+    }else{
+        text2 = "This variable is Not Null"
+    }
+
+     */
 }
