@@ -265,4 +265,27 @@ fun main() {
     }
 
      */
+
+    sayHello(name = "Shiran", age = 26)
+
+    val hasInternetConnection = true
+
+    if (hasInternetConnection) {
+        getData(data = "Some Data")
+    } else {
+        showMessage()
+    }
+
+}
+
+fun sayHello(name: String, age: Int) {
+    println("Hello $name Your age is $age")
+}
+
+fun getData(data: String) {
+    println("Yout Data Is $data")
+}
+
+fun showMessage() {
+    println("There is No Internet Connection")
 }
