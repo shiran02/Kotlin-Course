@@ -1,4 +1,4 @@
-fun main() {
+fun main(args: Array<String>) {
 
     // variables ------------------------
 
@@ -264,7 +264,7 @@ fun main() {
         text2 = "This variable is Not Null"
     }
 
-     */
+
 
     sayHello(name = "Shiran", age = 26)
 
@@ -275,6 +275,23 @@ fun main() {
     } else {
         showMessage()
     }
+
+
+    val max = getMax(a = 12, b = 22)
+    println("Max Number Is $max")
+
+    val min = getMin(a = 32, b = 3)
+    println("Min Value is : $min")
+
+    val max3 = getMax3(2,3,4)
+    println("Max Number Is $max3")
+
+
+     */
+
+    /// sendMessage()
+    //sendMessage2(name = "Shiran")
+    println(sum2(23, 1, 2, 3, 4, 3, 2, 3, 2, 3, 3, 3, 3, 32, 2, 23, 23, 4, 3))
 
 }
 
@@ -288,4 +305,68 @@ fun getData(data: String) {
 
 fun showMessage() {
     println("There is No Internet Connection")
+}
+
+fun getMax(a: Int, b: Int): Int {
+    val max = if (a > b) a else b
+    return max
+}
+
+fun getMax2(a: Int, b: Int): Int {
+
+    return if (a > b) a else b
+}
+
+fun getMin(a: Int, b: Int): Int {
+    if (a > b) {
+        return b
+    } else {
+        return a
+    }
+}
+
+fun getMax3(a: Int, b: Int) = if (a > b) a else b
+
+
+fun getMax3(a: Int, b: Int, c: Int): Int {
+    if (a >= b && a >= c) {
+        return a
+    } else if (b >= a && b >= c) {
+        return b
+    } else {
+        return c
+    }
+}
+
+fun sendMessage(name: String = "User", message: String = " ") {
+    println("Name Is $name and Message is $message")
+}
+
+fun sendMessage2(name: String = "User", message: String = sendText()) {
+    println("Name Is $name and Message is $message")
+}
+
+fun sendText(): String {
+    return "Some Text"
+}
+
+fun sum(vararg numbers: Int): Int {
+    var result = 0
+    for (number in numbers) {
+        result += number
+
+    }
+    return result
+}
+
+fun sum2(vararg numbers: Int) {
+    numbers.forEach {
+        println(it)
+    }
+}
+
+fun sum3(vararg numbers:Int){
+    numbers.forEach {
+        println(it)
+    }
 }
