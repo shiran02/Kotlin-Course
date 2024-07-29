@@ -1,7 +1,7 @@
 package loops
 
 fun main(args: Array<String>) {
-    /*
+
     for (i in 1..10) {
         println("i = $i")
     }
@@ -16,9 +16,15 @@ fun main(args: Array<String>) {
         println("i is $i")
     }
 
-     */
+
 
     for(i in 1 until 10 step 2){
         println("i is $i")
     }
+
+
+
+
+
+
 }
