@@ -25,7 +25,7 @@ fun main() {
         }
         println(i)
     }
-    */
+
 
     var number =0
 
@@ -40,6 +40,8 @@ fun main() {
             println("****$i")
         }
     }
+
+     */
 
 
 }
